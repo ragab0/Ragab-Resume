@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+			/* font-family: "Cormorant Upright", serif; */
+
+			:root {
+				--doted-size: 20px;
+				--dark-clr: #1e2532;
+				--light-clr: #fbfbfb;
+			}
+			* {
+				box-sizing: border-box;
+				margin: 0;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: var(--dark-clr);
+				padding: 1em 0;
+				font-family: "Poppins", sans-serif;
+				font-size: 1rem;
+			}
+
+			@media print {
+				body {
+					line-height: 1.2;
+				}
+				main {
+					min-height: 100vh;
+				}				
+			}
+
+			h1,
+			h2,
+			h3,
+			h5 {
+				text-transform: capitalize;
+				font-family: "Bree Serif",sans-serif;
+				font-weight: 400;
+
+			}
+			/* h1::first-letter,
+			h2::first-letter,
+			h3::first-letter,
+			h5::first-letter {
+				text-shadow: 1px 1px 0px #000;
+			} */
+			h1 {
+				font-size: 4.517rem;
+				text-transform: uppercase;
+				line-height: .99;
+				text-align: right;
+				
+				padding-right: 7px;
+				position: relative;
+				background-color: var(--light-clr);
+				margin: 23px 35px -1px -1px;
+
+				height: 100%;
+				opacity: .9;
+			}
+			h1 span {
+				display: block;
+			}
+			h2 {
+				font-size: 2.0rem;
+				margin-bottom: .25em;
+				line-height: 1;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+			object {
+				width: 20px;
+				height: 20px;
+				margin-inline-end: 5px;
+			}
+
+
+			/* End global rules */
+			/* Starting custom rules in verticaly order */
+			main {
+				padding: 3em;
+				padding-bottom: 2em;
+				background-color: var(--light-clr);
+				width: 928px;
+			}
+			section {
+				padding-block: 1rem;
+			}
+			section:not(:last-of-type) {
+				border-bottom: 1px solid #ddd;
+			}
+			
+			/* First Block */
+			.header {
+				display: flex;
+				gap: 3.25em;
+			}
+
+			.header__start-side {
+				position: relative;
+				overflow: hidden;
+			}
+			.header__end-side {
+				display: grid;
+				align-content: space-between;
+				gap: 10px;
+			}
+
+			.header #doted {
+				position: absolute;
+				top: 0px;
+				right: 0px;	
+				width: 100%;
+				height: 100%;
+				background-image: radial-gradient(circle at 1px 1px, #333 1px, transparent 0);
+				background-size: 8px 8px;
+			}
+
+			.header__items--links a {
+				color: blue;
+			}
+			.header__items--basic-info {
+				line-height: 0;
+			}
+
+
+			.header__items--links li,
+			.header__items--basic-info li {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1px;
+			}
+
+
+			/* Second section */
+			/* Third section */
+			.skills__items {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			.skills__items--addition {
+				margin-top: 7px;
+				font-style: italic;
+			}
+
+			.arrow-before,
+			.items--arrow-before li,
+			.skills__list li {
+				position: relative;
+				display: flex;
+				align-items: center;
+			}
+
+			.arrow-before::before,
+			.items--arrow-before li::before,
+			.skills__list li::before {
+				content: "";
+				position: relative;
+				top: 0;
+				left: 0px;
+				width: 10px;
+				height: 10px;
+				margin-inline-end: 7px;
+
+				background-image: radial-gradient(circle at .3px .3px, #333 1px, transparent 0);
+				background-size: 2.3px 2.3px;
+				clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+			}
+
+			.projects__pro:not(:last-child) {
+				margin-bottom: 7px;
+			}
+
+		</style>
+</head>
+<body>
+	<main>
+		<!-- First Block -->
+		<section class="header">
+			<aside class="header__start-side">
+				<div id="doted"></div>
+				<h1>ragab <span>eid</span></h1>
+			</aside>
+			<aside class="header__end-side">
+				<ul class="header__items--links">
+						<li>
+							<object type="image/svg+xml" data="./assets/MdiGithub.svg">&gt;</object>
+							<a href="https://github.com/ragab0">https://github.com/ragab0</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/TablerBrandLeetcode.svg">&gt;</object>
+							<a href="https://leetcode.com/ragab0">https://leetcode.com/ragab0</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/MdiLinkedin.svg">&gt;</object>
+							<a href="https://www.linkedin.com/in/ragab-eid">https://www.linkedin.com/in/ragab-eid</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/CibCodewars.svg">&gt;</object>
+							<a href="https://www.codewars.com/users/ragab">https://www.codewars.com/users/ragab</a>
+						</li>
+				</ul>
+				<ul class="header__items--basic-info">
+						<li>
+							<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg">&gt;</object>
+							+20 109 454 5736
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/FluentMail20Filled.svg">&gt;</object>
+							legendragab@gmail.com
+						</li>
+						<li style="place-self: flex-start;">
+							<object type="image/svg+xml" data="./assets/HeroiconsGlobeAltSolid.svg">&gt;</object>
+							Nazlt Elashtar village, Giza, Egypt (GMT+2)
+						</li>
+				</ul>
+			</aside>
+		</section>
+		<!-- Second section -->
+		<section class="about">
+			<h2>About</h2>
+			<p>
+				Hey, I'm Ragab a passionate front-end web developer who enjoys building everything with JS. 
+				Creating dynamic, user-friendly, and functional websites to make a good user experince. Currently I'm ready for a new challenge.
+				<p>So I'm seeking a trainee to improve my programming and professional skills.</p>
+		</section>
+		<!-- Third section -->
+		<section class="skills">
+				<h2>Skills</h2>
+				<div >
+					<ul class="skills__items items--arrow-before">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript ES6</li>
+						<li>JSON</li>
+						<li>JQuery</li>
+						<li>React.js</li>
+						<li>Redux.js & toolkit</li>
+						<li>Git & Github</li>
+					</ul>
+					<ul class="skills__items skills__items--addition items--arrow-before">
+						<li>Python</li>
+						<li>SQL & MySQL</li>
+						<li>Arabic - native</li>
+						<li>English - conversational</li>
+					</ul>
+				</div>
+		</section>
+		<!-- Fourth section -->
+		<section class="projects">
+			<h2>Projects</h2>
+			<div class="projects__pro">
+				<h3 class="arrow-before">My CV</h3>
+				<p>My personal CV which is present me for you right Now.
+				<p>-- Built with HTML5, CSS3<p></p>
+				<p>-- I used the BIM approach to write my CSS Code in a standard way.</p>
+			</div>
+			<div class="projects__pro">
+				<h3 class="arrow-before">Kazomera</h3>
+				<p>A Big Real World Project, remotely;</p>
+				<p>My role was to build the front-end of the company's website As I was a CO-Founder</p>
+				<p>-- It Built with: HTML5, CSS3, JavaScript ES6, React, Redux toolkit</p>
+				<p>-- I used additional React librarys like:
+				<ol>
+					<li>React-Router-DOM: to route the website's links together with each other</li>
+					<li>React-Hook-Form: to manage and control the forms in good way that doesn't rerender the app in each change of the form
+							as default form does</li>
+					<li>React-redux: to link React.js with Redux.js</li>
+				</ol>
+			</div>
+		</section>
+		<section class="education">
+				<h2>Education</h2>
+				<p class="arrow-before">Bachelor of FAC: Faculity of commerce</p>
+				<p>Cairo university - Giza - Egypt</p>
+				<p>Undergraduate, 2022 - 2026 <i>(As expected)</i></p>
+		</section>
+	</main>
+</body>
+</html>
