@@ -6,6 +6,7 @@
 }
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
 }
@@ -72,6 +73,7 @@ ul {
 object {
     width: 20px;
     height: 20px;
+    -webkit-margin-end: 5px;
     margin-inline-end: 5px;
 }
 /* End global rules */
@@ -161,10 +163,13 @@ section:not(:last-of-type) {
     left: 0px;
     width: 10px;
     height: 10px;
+    -webkit-margin-end: 7px;
     margin-inline-end: 7px;
 
     background-image: radial-gradient(circle at .3px .3px, #333 1px, transparent 0);
     background-size: 2.3px 2.3px;
+
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
