@@ -82,7 +82,7 @@ object {
 /* Starting custom global rules in verticaly order */
 main {
     padding: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     background-color: var(--light-clr);
     width: 928px;
 }
