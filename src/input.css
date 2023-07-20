@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background-color: #fff;
+}
+body {
+    @apply w-[928px] mx-auto p-12 pb-4 bg-mainLight text-mainDark text-base 
+            print:w-full print:min-h-screen;
+
+    font-family: Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
+}
+
+p, h3, li {
+    line-height: 1.2em;
+}
+
+a {
+    color: blue;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: capitalize;
+    font-family: "Bree Serif",sans-serif;
+}
+h1 {
+    @apply text-5xl;
+}
+h2 {
+    @apply text-2xl mb-[6px];
+}
+
+/* Crazy note :D */
+h2 + h3,
+h2 + article > h3 {
+    margin-top: -6px
+}
+
+h3 {
+    @apply text-lg;
+}
+
+object {
+    width: 20px;
+    height: 20px;
+    -webkit-margin-end: 5px;
+    margin-inline-end: 5px;
+}
+
+
+/* Start cursom page rules */
+/* Start sections rules */
+main > section {
+    padding-block: 1rem;
+}
+
+main > section:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+
+/* First section */
+main > section:first-of-type ul {
+    @apply leading-5;
+
+}
+
+main > section:first-of-type li {
+    @apply flex items-center ;
+}
+
+/* Second section */
+h3::before,
+section.skills li::before {
+    content: "\2217";
+    content: "\2197";
+    content: "\2714";
+    margin-right: 5px;
+    /* 
+        2197 / arrow
+        2714 Correct
+        2217 **
+
+        2022 (Pullit)
+        2043 (-)
+        2023 (>)
+        2765 Arrow boldest
+        2799  arrow ->
+        10195 >> wave double arrows 
+    */
+
+}
+
+@media print {
+    section.education {
+        border: none !important;
+    }
+    section.download {
+        display: none ;
+    }
+}
