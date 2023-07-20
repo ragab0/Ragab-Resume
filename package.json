@@ -2,7 +2,7 @@
   "name": "cv",
   "version": "2.0.0",
   "description": "My persoanl CV",
-  "main": "/build/index.html",
+  "main": "/docs/index.html",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
   },
