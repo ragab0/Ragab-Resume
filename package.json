@@ -4,7 +4,7 @@
   "description": "My persoanl CV",
   "main": "/docs/index.html",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch"
   },
   "author": "ragab0",
   "license": "ISC"

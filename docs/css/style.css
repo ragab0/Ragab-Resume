@@ -584,12 +584,24 @@ video {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .italic {
   font-style: italic;
 }
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.text-current {
+  color: currentColor;
+}
+
+.text-inherit {
+  color: inherit;
 }
 
 .underline {
@@ -607,7 +619,7 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(253 253 253 / var(--tw-bg-opacity));
   padding: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
@@ -668,6 +680,10 @@ object {
   margin-inline-end: 5px;
 }
 
+time {
+  font-weight: 200;
+}
+
 /* Start cursom page rules */
 
 /* Start sections rules */
@@ -716,6 +732,7 @@ section.skills li::before {
 @media print {
   section.education {
     border: none !important;
+    padding-bottom: 0;
   }
 
   section.download {

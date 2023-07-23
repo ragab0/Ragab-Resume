@@ -6,7 +6,7 @@ html {
     background-color: #fff;
 }
 body {
-    @apply w-[928px] mx-auto p-12 pb-4 bg-mainLight text-mainDark text-base 
+    @apply w-[928px] mx-auto p-12 pb-3 bg-mainLight text-mainDark text-base 
             print:w-full print:min-h-screen;
 
     font-family: Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
@@ -46,6 +46,10 @@ object {
     height: 20px;
     -webkit-margin-end: 5px;
     margin-inline-end: 5px;
+}
+
+time {
+    font-weight: 200;
 }
 
 
@@ -94,6 +98,7 @@ section.skills li::before {
 @media print {
     section.education {
         border: none !important;
+        padding-bottom: 0;
     }
     section.download {
         display: none ;
