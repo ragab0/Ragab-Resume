@@ -6,7 +6,7 @@ html {
     background-color: #fff;
 }
 body {
-    @apply w-[928px] mx-auto p-12 pb-3 bg-mainLight text-mainDark text-base 
+    @apply w-[928px] mx-auto p-12 pb-0 bg-mainLight text-mainDark text-base 
             print:w-full print:min-h-screen;
 
     font-family: Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
@@ -50,6 +50,7 @@ object {
 
 time {
     font-weight: 200;
+    font-size: .9rem;
 }
 
 
