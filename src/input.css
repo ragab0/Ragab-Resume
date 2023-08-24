@@ -5,15 +5,11 @@
 html {
     background-color: #fff;
 }
+
 body {
-    @apply w-[928px] mx-auto p-12 pb-0 bg-mainLight text-mainDark text-base 
-            print:w-full print:min-h-screen;
-
+    @apply max-w-4xl mx-auto p-16 bg-mainLight text-mainDark text-base 
+            print:w-full print:min-h-screen leading-5;
     font-family: Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
-}
-
-p, h3, li {
-    line-height: 1.2em;
 }
 
 a {
@@ -24,17 +20,13 @@ h1, h2, h3, h4, h5 {
     text-transform: capitalize;
     font-family: "Bree Serif",sans-serif;
 }
+
 h1 {
     @apply text-5xl;
 }
-h2 {
-    @apply text-2xl mb-[6px];
-}
 
-/* Crazy note :D */
-h2 + h3,
-h2 + article > h3 {
-    margin-top: -6px
+h2 {
+    @apply text-2xl leading-5 mb-3;
 }
 
 h3 {
@@ -42,10 +34,7 @@ h3 {
 }
 
 object {
-    width: 20px;
-    height: 20px;
-    -webkit-margin-end: 5px;
-    margin-inline-end: 5px;
+    @apply w-5 h-5 me-1;
 }
 
 time {
@@ -54,10 +43,11 @@ time {
 }
 
 
-/* Start cursom page rules */
+
+/* Start custom page rules */
 /* Start sections rules */
 main > section {
-    padding-block: 1rem;
+    padding-block: 1.25rem;
 }
 
 main > section:not(:last-of-type) {
@@ -96,11 +86,16 @@ section.skills li::before {
 
 }
 
+section.projects > article:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
 @media print {
-    section.education {
-        border: none !important;
-        padding-bottom: 0;
+    section.projects {
+        @apply pt-16 !border-none;
+        page-break-before:always;
     }
+
     section.download {
         display: none ;
     }
