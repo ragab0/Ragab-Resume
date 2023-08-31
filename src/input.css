@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+    @apply transition-all;
+}
+
+*::-webkit-scrollbar {
+    @apply bg-transparent w-3;
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply bg-mainDark active:bg-mainDark/90  rounded-full;
+}
+
+::selection {
+    @apply bg-mainDark text-white;
+}
+
+
 html {
     background-color: #fff;
 }

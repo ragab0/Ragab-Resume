@@ -596,6 +596,41 @@ video {
   text-decoration-line: underline;
 }
 
+* {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+*::-webkit-scrollbar {
+  width: 0.75rem;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 37 50 / var(--tw-bg-opacity));
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30 37 50 / 0.9);
+}
+
+::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 37 50 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 37 50 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 html {
   background-color: #fff;
 }
