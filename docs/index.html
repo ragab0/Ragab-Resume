@@ -12,18 +12,30 @@
 			@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 		</style>
 </head>
-<body>
+<body class="relative">
 	<main>
+		<!-- Download section -->
+		<section class="download absolute top-0 left-0 p-0 flex gap-4 w-full shadow-2xl bg-mainDark">
+			<button class="bg-slate-600 p-2 text-slate-100 w-full text-center capitalize" onclick="window.print()">
+				Print now - (Recommended - keep upToDate)
+			</button>
+			<a download href="https://github.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf" 
+				class="bg-slate-600 p-2 text-slate-100 w-full text-center capitalize"
+			>
+				Download - (the real design)
+			</a>
+		</section>
+
 		<section class="header-sec grid grid-cols-2">
 			<header>
 				<h1 class="uppercase mb-2">ragab eid</h1>	
 				<div>
-					<h4 class="text-lg">a Front-end web developer</p>
-					<h4>(entry-level);</p>
+					<h4 class="text-lg">a Front-end web dev</p>
+					<h4>(entryLevel);</p>
 				</div>
 			</header>
 			<nav class="flex flex-col justify-between gap-3 py-2">
-				<ul class="links">
+				<ul class="links leading-5 items-start-center">
 						<li>
 							<object type="image/svg+xml" data="./assets/MdiGithub.svg">&gt;</object>
 							<a href="https://github.com/ragab0">https://github.com/ragab0</a>
@@ -41,7 +53,7 @@
 							<a href="https://www.codewars.com/users/ragab">https://www.codewars.com/users/ragab</a>
 						</li>
 				</ul>
-				<ul class="infos">
+				<ul class="infos leading-5 items-start-center">
 					<li>
 						<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg">&gt;</object>
 						+20 109 454 5736
@@ -59,8 +71,10 @@
 		</section>
 		<section class="about">
 			<h2>About</h2>
-			<p>Hello there, I'm Ragab, a highly motivated front-end web developer with a strong background in back-end technologies. 
-				Seeking an internship working on real projects, enabling me make the best use of what I've learned.
+			<p>Hello there, I'm Ragab, a highly motivated front-end web developer 
+				with a strong knowledge of back-end technologies and web design tools. 
+				Commited to continous growth, being with professionals and learn from them.
+				I'm always Seeking a challenge, enabling me make the best use of what I have.
 			</section>
 		<section class="skills">
 				<h2>Skills</h2>
@@ -79,9 +93,7 @@
 						<li>jest - unit testing</li>
 						<li>git - version control</li>
 						<li>webpack - files bundling</li>
-						<li>node.<span class="lowercase">js</span> & bun.<span class="lowercase">js</span> 
-							- JS environments running
-						</li>
+						<li>figma - web design</li>
 					</ul>
 					<ul class="mt-3 capitalize">
 						<li>Arabic - native</li>
@@ -93,67 +105,115 @@
 		<section>
 			<h2>Work Experience</h2>
 			<article>
-				<h3>front-end web developer - Period time</h3>
-				<p>Kazomera - Remote</p>
-				<time>04/2023 - 06/2023</time>
+				<header>
+					<h3>front-end web developer - Freelance</h3>
+				</header>
+				<div>
+					<p>Kazomera - Remote</p>
+					<time>04/2023 - 06/2023</time>
+				</div>
 			</article>
 		</section>
 		<section class="education">
 			<h2>Education</h2>
-			<h3 class="arrow-before">Bachelor of FAC: Faculity of commerce</h3>
-			<p>Cairo university - Giza - Egypt</p>
-			<time>Undergraduate, 2022 - 2026 (As expected)</time>
+			<article>
+				<header>
+					<h3 class="arrow-before">Bachelor of FAC: Faculity of commerce</h3>
+				</header>
+				<div>
+					<p>Cairo university - Giza - Egypt</p>
+					<time>Undergraduate, 2022 - 2026 (As expected)</time>
+				</div>
+			</article>
 		</section>
 
 		<!-- Projects section -->
 		<section class="projects">
 			<h2>Projects</h2>
 			<article>
-				<h3>Ragab-Portfolio: </h3> 
-				<p>That is my personal website where I showcase all of my skills and projects. 
-				<p>- Built with HTML5, CSS3, JavaScript, React, Nextjs, and Tailwindcss
-				<p>- View at 
-					<a href="https://ragab.vercel.app">https://ragab.vercel.app</a>
-				</p>
-				</article>
-			<article>
-				<h3>Ragab-CV: </h3>
-				<p>That is my personal CV, which presents me as a front-end web developer.
-				<p>- Built with HTML5, CSS3, Tailwindcss
-				<p>- View at
-					<a href="https://ragab0.github.io/Ragab-Resume">https://ragab0.github.io/Ragab-Resume</a>
-				</p>
+				<header>
+					<h3>Ragab-Portfolio:
+						<date>06/2023 - 09/2023</date>
+					</h3> 
+				</header>
+				<div>
+					<p>That is my personal website where I showcase all of my skills and latest projects.</p>
+					<ul>
+						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, and Tailwindcss</li>
+						<li>
+							View at <a href="https://ragab.vercel.app">https://ragab.vercel.app</a>
+						</li>
+					</ul>
+				</div>
 			</article>
 			<article>
-				<h3>tod: </h3>
-				<p>A todo-list website designed in Figma, Integrated with Tod - an AI chatbot built above NLP trained 3 billion data - he can by commuinacting with him in text or voice, manage tasks create\edit, manage user info, and answer general quistions.
-				<p>- Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, and NLP.js
-				<p>- View at
-					<a href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
-				</p>
+				<header>
+					<h3>Ragab-CV:
+						<date>06/2023 - 09/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>That is my personal CV, which presents me as a front-end web developer.</p>
+					<ul>
+						<li>Built with HTML5, CSS3, Tailwindcss</li>
+						<li>
+							View at <a href="https://ragab0.github.io/Ragab-Resume">https://ragab0.github.io/Ragab-Resume</a>
+						</li>
+					</ul>
+				</div>
 			</article>
 			<article>
-				<h3>ramy-fitness: </h3>
-				<p>A fitness website, the place where you are the coatch and the student, find about more than 2000
-					exercise with unlimited access, CRUD you favourite plan in easy way.
-				<p>- Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, and RapidAPI
-				<p>- View at
-					<a href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
-				</p>
+				<header>
+					<h3>tod: 
+						<date>09/2023 - 11/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>A user-friendly web application - Todo List, designed in Figma, and integrated with AI</p>
+					<ul>
+						<li>
+							Custom designed chatbot - Tod: Built above NLP, Understand human speach (text and voice),
+							Manage them tasks (CRUD, filter, and sort), and Answer quistions (Related or Public)
+						</li>
+						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, and NLP.js</li>
+						<li>
+							View at <a href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
+						</li>
+					</ul> 
+				</div>
 			</article>
 			<article>
-				<h3>Comphy-store: </h3>
-				<p>An E-Commerce website where you can buy or hope and save products. seamless cart functionality, and advanced filtering products
-				<p>- Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, Redux, and Express.js
-				<p>- View at
-					<a href="https://comphy-store.vercel.app">https://comphy-store.vercel.app</a>
-				</p>
+				<header>
+					<h3>ramy-fitness:
+						<date>09/2023 - 10/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>A fitness website, Exercisedb API built in Nextjs routes and JSON, seamless card functionality</p>
+					<ul>
+						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, and JSON</li>
+						<li>View at
+							<a href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
+						</li>
+					</ul>
+				</div>
 			</article>
-		</section>
-		<section class="download">
-			<a class="underline text-current" href="https://github.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf" download>Click to download (show the real design)</a>
-			<br />
-			<button class="underline" onclick="window.print()">Print Now from browser - (Recommended) - for keeping you up-to-date</button>
+			<article>
+				<header>
+					<h3>Comphy-store:
+						<date>07/2023 - 08/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>An E-Commerce website, API built in Express.js, seamless card functionality, advanced filtering.</p>
+					<ul>
+						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, Redux, and JSON</li>
+						<li>
+							View at <a href="https://comphy-store.vercel.app">https://comphy-store.vercel.app</a>
+						</li>
+					</ul>
+				</div>
+			</article>
 		</section>
 	</main>
 </body>
