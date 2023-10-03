@@ -48,7 +48,7 @@
     }
     
     h2 {
-        @apply text-2xl leading-5 mb-3;
+        @apply text-2xl leading-[1] mb-2;
     }
     
     h3 {
@@ -70,11 +70,15 @@
     }
 
     section {
-        padding-block: 1.25rem;
+        padding-block: 1rem;
     }
 
     section:not(:last-of-type) {
         border-bottom: 1px solid #eee;
+    }
+
+    section article:first-of-type h3 {
+        margin-top: -.25em;
     }
 
     article:not(:last-of-type) {
