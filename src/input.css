@@ -20,14 +20,13 @@
         @apply bg-mainDark;
     }
     
-    html {
-        @apply bg-mainDark
-    }
-    
     body {
-        @apply max-w-4xl mx-auto p-16 bg-white text-mainDark text-base 
-                print:w-full print:min-h-screen leading-5;
+        @apply bg-mainDark print:bg-white text-mainDark leading-5 text-base;
         font-family: Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
+    }
+
+    main {
+        @apply bg-white max-w-4xl mx-auto p-16;
     }
     
     a {
@@ -44,15 +43,11 @@
     }
     
     h1 {
-        @apply text-5xl;
+        @apply text-5xl leading-[.75] mb-2 uppercase;
     }
     
     h2 {
-        @apply text-2xl leading-[1] mb-2;
-    }
-    
-    h3 {
-        @apply text-lg;
+        @apply text-2xl leading-[1.1] mb-2;
     }
 
     date {
@@ -70,7 +65,7 @@
     }
 
     section {
-        padding-block: 1rem;
+        padding-block: .75rem;
     }
 
     section:not(:last-of-type) {
@@ -102,23 +97,23 @@
         @apply flex items-center;
     }
 
+    /* 
+        2197 / arrow
+        2714 Correct
+        2217 **
+        2022 (Pullit)
+        2043 (-)
+        2023 (>)
+        2765 Arrow boldest
+        2799  arrow ->
+        10195 >> wave double arrows 
+    */
     h3::before,
     section.skills li::before {
         content: "\2217";
         content: "\2197";
         content: "\2714";
         margin-right: 5px;
-        /* 
-            2197 / arrow
-            2714 Correct
-            2217 **
-            2022 (Pullit)
-            2043 (-)
-            2023 (>)
-            2765 Arrow boldest
-            2799  arrow ->
-            10195 >> wave double arrows 
-        */
     }
 }
 
@@ -128,8 +123,8 @@
         display: none ;
     }
     
-    section.projects {
-        @apply pt-16 h-screen;
+    section.skills {
+        @apply pt-16;
         page-break-before:always;
     }
 

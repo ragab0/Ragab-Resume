@@ -1,7 +1,7 @@
 {
   "name": "cv",
-  "version": "3.3.3",
-  "description": "My persoanl CV",
+  "version": "5.0.0",
+  "description": "Ragab persoanl CV which introduce him in the field of front-end web development",
   "main": "/docs/index.html",
   "scripts": {
     "twd": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch"

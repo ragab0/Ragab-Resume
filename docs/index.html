@@ -1,109 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Ragab-Resume</title>
-	<!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-	<link rel="stylesheet" href="./css/style.css">
-	
+	<link rel="stylesheet" href="./css/style.css" />
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+		@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 	</style>
 </head>
-<body class="relative">
-	<main>
+<body>
+	<main class="relative">
 		<!-- Download section -->
 		<section class="download absolute top-0 left-0 p-0 flex gap-4 w-full shadow-2xl bg-mainDark">
 			<button onclick="window.print()" class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize">
 				Print now - (Recommended - keep upToDate)
 			</button>
-			<a download target="_blank" href="https://github.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf" 
-				class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize"
-			>
+			<a download target="_blank" href="https://github.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf"
+				class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize">
 				Download - (the real design)
 			</a>
 		</section>
+
 		<!-- First section -->
-		<section class="header-sec grid grid-cols-2">
-			<header>
-				<h1 class="uppercase mb-2">ragab eid</h1>	
+		<section>
+			<header class="grid grid-cols-2 mb-2">
 				<div>
-					<h4 class="text-lg">a Front-end web developer</p>
-					<h4>(entry-Level);</p>
+					<h1>ragab eid</h1>
+					<h4 class="text-[19px]">a Front-end web developer</h4>
 				</div>
+				<nav>
+					<ul class="leading-5 items-start-center">
+						<li>
+							<object class="border-2 border-mainDark rounded-full"></object>
+							<a target="_blank" href="https://ragab.vercel.app" aria-label="My Personal Portfolio">
+								https://ragab.vercel.app
+							</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/MdiGithub.svg"></object>
+							<a target="_blank" href="https://github.com/ragab0">https://github.com/ragab0</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/TablerBrandLeetcode.svg"></object>
+							<a target="_blank" href="https://leetcode.com/ragab0">https://leetcode.com/ragab0</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/MdiLinkedin.svg"></object>
+							<a target="_blank" href="https://www.linkedin.com/in/ragab-eid">https://www.linkedin.com/in/ragab-eid</a>
+						</li>
+					</ul>
+				</nav>
 			</header>
-			<nav class="flex flex-col justify-between gap-3 py-2">
-				<ul class="links leading-5 items-start-center">
-						<li>
-							<object type="image/svg+xml" data="./assets/MdiGithub.svg">&gt;</object>
-							<a href="https://github.com/ragab0">https://github.com/ragab0</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/TablerBrandLeetcode.svg">&gt;</object>
-							<a href="https://leetcode.com/ragab0">https://leetcode.com/ragab0</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/MdiLinkedin.svg">&gt;</object>
-							<a href="https://www.linkedin.com/in/ragab-eid">https://www.linkedin.com/in/ragab-eid</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/CibCodewars.svg">&gt;</object>
-							<a href="https://www.codewars.com/users/ragab">https://www.codewars.com/users/ragab</a>
-						</li>
-				</ul>
-				<ul class="infos leading-5 items-start-center">
+			<div>
+				<ul class="w-full flex justify-center gap-4 items-start-center">
 					<li>
-						<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg">&gt;</object>
+						<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg"></object>
 						+20 109 454 5736
 					</li>
-					<li style="place-self: flex-start;">
-						<object type="image/svg+xml" data="./assets/HeroiconsGlobeAltSolid.svg">&gt;</object>
+					<li style="place-self: flex-start">
+						<object type="image/svg+xml" data="./assets/HeroiconsGlobeAltSolid.svg"></object>
 						Giza, Egypt (GMT+3)
 					</li>
 					<li>
-						<object type="image/svg+xml" data="./assets/FluentMail20Filled.svg">&gt;</object>
+						<object type="image/svg+xml" data="./assets/FluentMail20Filled.svg"></object>
 						legendragab@gmail.com
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</section>
+
+		<!-- About section -->
 		<section class="about">
 			<h2>About</h2>
-			<p>Hello there, I'm Ragab, a highly motivated front-end web developer 
-				with a strong knowledge of back-end technologies and web-design tools.
-				I'm Committed to continuous growth, being with professionals and learn from them.
-				I'm always Seeking challenges, enabling me making the best use of what I have learned.
-			</section>
-		<section class="skills">
-				<h2>Skills</h2>
-				<div>
-					<ul class="grid grid-cols-2 capitalize">
-						<li>DS & Algorithms</li>
-						<li>SQL Server - Database</li>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>JavaScript ES6+</li>
-						<li>JSON</li>
-						<li>JQuery</li>
-						<li>SASS</li>
-						<li>react</li>
-						<li>redux & RTK</li>
-						<li>nextjs</li>
-						<li>tailwindcss</li>
-						<li>jest - unit testing</li>
-						<li>git - version control</li>
-						<li>webpack - files bundling</li>
-						<li>figma - web design</li>
-					</ul>
-					<ul class="mt-3 capitalize">
-						<li>Arabic - native</li>
-						<li>English - conversational</li>
-						<li>problem solving</li>
-					</ul>
-				</div>
+			<p>
+				Hello there, I'm Ragab, a highly motivated front-end web developer,
+				passionate about programming with a strong knowledge of back-end
+				technologies and web-design tools. I'm Committed to continuous growth,
+				and learning from experienced professionals. I'm always Seeking
+				challenges, enabling me making the best use of what I have learned.
+			</p>
 		</section>
+
+		<!-- Exp section -->
 		<section class="experience">
 			<h2>Work Experience</h2>
 			<article>
@@ -116,11 +96,178 @@
 				</div>
 			</article>
 		</section>
+
+		<!-- Projects section -->
+		<section class="projects">
+			<h2>Projects</h2>
+			<article>
+				<header>
+					<h3>
+						Ragab-Portfolio:
+						<date>08/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>
+						That's my personal website where I showcase all of my skills and
+						my latest projects
+					</p>
+					<ul>
+						<li>
+							Built with HTML5, CSS3, JavaScript, React, Nextjs, and
+							Tailwindcss
+						</li>
+						<li>
+							View at
+							<a target="_blank" href="https://ragab.vercel.app">https://ragab.vercel.app</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<header>
+					<h3>
+						Ragab-CV:
+						<date>10/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>
+						That's my personal CV, which present me as a front-end web
+						developer.
+					</p>
+					<ul>
+						<li>Built with HTML5, CSS3, Tailwindcss</li>
+						<li>
+							View at
+							<a target="_blank" href="https://ragab0.github.io/Ragab-Resume">https://ragab0.github.io/Ragab-Resume</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<header>
+					<h3>
+						tod:
+						<date>present</date>
+					</h3>
+				</header>
+				<div>
+					<p>
+						A user-friendly web application - Todo List, designed in Figma,
+						and integrated with AI
+					</p>
+					<ul>
+						<li>
+							Custom designed chatbot - Tod: Built above NLP, Understand human
+							speach (text and voice), Manage them tasks (CRUD, filter, and
+							sort), and Answer them quistions (Related or Public)
+						</li>
+						<li>
+							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss,
+							Figma, and NLP.js
+						</li>
+						<li>
+							View at
+							<a target="_blank" href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<header>
+					<h3>
+						ramy-fitness:
+						<date>09/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>
+						A fitness website, Exercisedb API built in Nextjs routes and JSON,
+						seamless card functionality
+					</p>
+					<ul>
+						<li>
+							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss,
+							Figma, and JSON
+						</li>
+						<li>
+							View at
+							<a target="_blank" href="https://ramy-fitness.vercel.app">https://ramy-fitness.vercel.app</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article>
+				<header>
+					<h3>
+						Comphy-store:
+						<date>07/2023</date>
+					</h3>
+				</header>
+				<div>
+					<p>
+						An E-Commerce website, API built in Express.js, seamless card
+						functionality, advanced filtering
+					</p>
+					<ul>
+						<li>
+							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss,
+							Figma, Redux, and JSON
+						</li>
+						<li>
+							View at
+							<a target="_blank" href="https://comphy-store.vercel.app">https://comphy-store.vercel.app</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+
+		<!-- Skills section -->
+		<section class="skills">
+			<h2>Skills</h2>
+			<div>
+				<ul class="grid grid-cols-2 capitalize">
+					<li>Data Structures</li>
+					<li>Algorithms</li>
+					<li>OOP</li>
+					<li>SOLID princeples</li>
+					<li>Networking</li>
+					<!-- <li>Design patterns</li> -->
+					<li>Python</li>
+					<li>SQL Server - Database</li>
+				</ul>
+				<ul class="grid grid-cols-2 my-3 capitalize">
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript ES6+</li>
+					<li>JSON</li>
+					<li>redux</li>
+					<li>JQuery</li>
+					<li>SASS</li>
+					<li>react</li>
+					<li>nextjs</li>
+					<li>tailwindcss</li>
+					<li>jest - unit testing</li>
+					<li>git - version control</li>
+					<li>webpack - files bundling</li>
+					<li>figma - web design</li>
+				</ul>
+				<ul class="capitalize">
+					<li>Arabic - native</li>
+					<li>English - conversational</li>
+					<li>problem solving - solved</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Edu section -->
 		<section class="education">
 			<h2>Education</h2>
 			<article>
 				<header>
-					<h3 class="arrow-before">Bachelor of FAC: Faculity of commerce</h3>
+					<h3 class="arrow-before">Bachelor of arabic commerce</h3>
 				</header>
 				<div>
 					<p>Cairo university - Giza - Egypt</p>
@@ -128,109 +275,6 @@
 				</div>
 			</article>
 		</section>
-
-		<!-- Projects section -->
-		<section class="projects">
-			<h2>Projects</h2>
-			<article>
-				<header>
-					<h3>Ragab-Portfolio:
-						<date>08/2023</date>
-					</h3> 
-				</header>
-				<div>
-					<p>That's my personal website where I showcase all of my skills and my latest projects</p>
-					<ul>
-						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, and Tailwindcss</li>
-						<li>
-							View at <a href="https://ragab.vercel.app">https://ragab.vercel.app</a>
-						</li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<header>
-					<h3>Ragab-CV:
-						<date>10/2023</date>
-					</h3>
-				</header>
-				<div>
-					<p>That's my personal CV, which present me as a front-end web developer.</p>
-					<ul>
-						<li>Built with HTML5, CSS3, Tailwindcss</li>
-						<li>
-							View at <a href="https://ragab0.github.io/Ragab-Resume">https://ragab0.github.io/Ragab-Resume</a>
-						</li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<header>
-					<h3>tod: 
-						<date>present</date>
-					</h3>
-				</header>
-				<div>
-					<p>A user-friendly web application - Todo List, designed in Figma, and integrated with AI</p>
-					<ul>
-						<li>
-							Custom designed chatbot - Tod: Built above NLP, Understand human speach (text and voice),
-							Manage them tasks (CRUD, filter, and sort), and Answer them quistions (Related or Public)
-						</li>
-						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, and NLP.js</li>
-						<li>
-							View at <a href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
-						</li>
-					</ul> 
-				</div>
-			</article>
-			<article>
-				<header>
-					<h3>ramy-fitness:
-						<date>09/2023</date>
-					</h3>
-				</header>
-				<div>
-					<p>A fitness website, Exercisedb API built in Nextjs routes and JSON, seamless card functionality</p>
-					<ul>
-						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, and JSON</li>
-						<li>View at
-							<a href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
-						</li>
-					</ul>
-				</div>
-			</article>
-			<article>
-				<header>
-					<h3>Comphy-store:
-						<date>07/2023</date>
-					</h3>
-				</header>
-				<div>
-					<p>An E-Commerce website, API built in Express.js, seamless card functionality, advanced filtering</p>
-					<ul>
-						<li>Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, Figma, Redux, and JSON</li>
-						<li>
-							View at <a href="https://comphy-store.vercel.app">https://comphy-store.vercel.app</a>
-						</li>
-					</ul>
-				</div>
-			</article>
-		</section>
 	</main>
 </body>
 </html>
-
-
-
-<!-- 
-Tell us about yourself. What makes you unique from other candidates?
-	there are several reasons. Firstly, I am highly motivated and dedicated to my work. I approach every task with enthusiasm and strive to deliver exceptional results. My commitment to excellence ensures that I will provide value to our company by successfully completing complex assignments.
-	Furthermore, I am constantly improving my skills and actively seeking opportunities to learn new ones.
-	I am confident that I would be an asset to the company and contribute positively to its success.
-
-What are you expecting of this internship? What do you aim to learn?
-	I have several expectations and aims. Firstly, I see this as a valuable opportunity to prove myself in the market.  
-	I aim to gain new experiences by working on real and complex tasks, Collaborating with professionals in the industry. 
-	I am excited about the opportunity to communicate with the team.
--->
