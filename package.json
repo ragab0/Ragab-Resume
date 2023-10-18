@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Ragab persoanl CV which introduce him in the field of front-end web development",
   "main": "/docs/index.html",
   "scripts": {

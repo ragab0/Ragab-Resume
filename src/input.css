@@ -109,7 +109,7 @@
         10195 >> wave double arrows 
     */
     h3::before,
-    section.skills li::before {
+    .items-arrow-before li::before {
         content: "\2217";
         content: "\2197";
         content: "\2714";

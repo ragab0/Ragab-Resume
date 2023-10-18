@@ -690,7 +690,7 @@ article li::before {
     */
 
 h3::before,
-    section.skills li::before {
+    .items-arrow-before li::before {
   content: "\2217";
   content: "\2197";
   content: "\2714";
@@ -713,13 +713,12 @@ h3::before,
   top: 0px;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -797,6 +796,10 @@ h3::before,
 .text-slate-100 {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.text-current {
+  color: currentColor;
 }
 
 .shadow-2xl {
