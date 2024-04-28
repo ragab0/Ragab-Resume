@@ -1,10 +1,10 @@
 # Ragab-Resume
 
-My personal resume - **Ragab Resume** - which present me at the field of front-end web development. 
+My personal resume which present me at the field of front-end web development. 
 
 ![Ragab-Resume-Img](./VERSIONs/resume.png)
 
-## Built in:
+## Built with:
 
 - HTML5
 - CSS3

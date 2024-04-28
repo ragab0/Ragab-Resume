@@ -5,19 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Ragab-Resume</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css" />
-	<style>
-		@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-	</style>
 </head>
 <body>
 	<main class="relative">
 		<!-- Download section -->
 		<section class="download absolute top-0 left-0 p-0 flex gap-4 w-full shadow-2xl bg-mainDark">
 			<button onclick="window.print()" class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize">
-				Print now - (Recommended - keep upToDate)
+				Print now (UpToDate version)
 			</button>
-			<a download target="_blank" href="https://github.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf"
+			<a download target="_blank" href="https://raw.githubusercontent.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf"
 				class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize">
 				Download - (the real design)
 			</a>
@@ -25,61 +25,92 @@
 
 		<!-- First section -->
 		<section id="info" class="info" role="region" aria-labelledby="info-section">
-			<header class="grid grid-cols-2 mb-2">
-				<div>
+			<header class="mb-2">
+				<div class="flex gap-2 mb-2 items-baseline">
 					<h1>ragab eid</h1>
-					<h2 class="text-[19px]">a Front-end web developer</h2>
+					<span class="text-xl items-end">Software developer | React web developer</span>
 				</div>
-				<ul id="links" class="links leading-5 items-start-center">
-					<li>
-						<object class="border-2 border-mainDark rounded-full"></object>
-						<a target="_blank" href="https://ragab.vercel.app" aria-label="My Personal Portfolio">
-							https://ragab.vercel.app
-						</a>
-					</li>
-					<li>
-						<object type="image/svg+xml" data="./assets/MdiGithub.svg"></object>
-						<a target="_blank" href="https://github.com/ragab0">https://github.com/ragab0</a>
-					</li>
-					<li>
-						<object type="image/svg+xml" data="./assets/TablerBrandLeetcode.svg"></object>
-						<a target="_blank" href="https://leetcode.com/ragab0">https://leetcode.com/ragab0</a>
-					</li>
-					<li>
-						<object type="image/svg+xml" data="./assets/MdiLinkedin.svg"></object>
-						<a target="_blank" href="https://www.linkedin.com/in/ragab-eid">https://www.linkedin.com/in/ragab-eid</a>
-					</li>
-				</ul>
+			  <div class="flex justify-between">
+					<ul class="leading-[26px] items-start-center">
+						<li style="place-self: flex-start">
+							<object type="image/svg+xml" data="./assets/HeroiconsGlobeAltSolid.svg"></object>
+							Giza - Egypt
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg"></object>
+							<a href="tel:+20 109 454 5736" class="text-current">
+								+20 109 454 5736
+								<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+							</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/FluentMail20Filled.svg"></object>
+							<a href="mail:legendragab@gmail.com" class="text-current">
+								legendragab@gmail.com
+								<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+							</a>
+						</li>
+					</ul>
+					<ul id="links" class="links items-start-center">
+						<li>
+							<object type="image/svg+xml" data="./assets/ph--code-bold.svg"></object>
+							<a target="_blank" href="https://ragab-eid.vercel.app">https://ragab-eid.vercel.app</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/MdiGithub.svg"></object>
+							<a target="_blank" href="https://github.com/ragab0">https://github.com/ragab0</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/TablerBrandLeetcode.svg"></object>
+							<a target="_blank" href="https://leetcode.com/ragab0">https://leetcode.com/ragab0</a>
+						</li>
+						<li>
+							<object type="image/svg+xml" data="./assets/MdiLinkedin.svg"></object>						
+							<a target="_blank" href="https://www.linkedin.com/in/ragab-eid">https://www.linkedin.com/in/ragab-eid</a>
+						</li>
+					</ul>
+				</div>
 			</header>
-			<ul class="w-full flex justify-center gap-4 items-start-center">
-				<li>
-					<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg"></object>
-					<a href="tel:+20 109 454 5736" class="text-current">+20 109 454 5736</a>
-				</li>
-				<li style="place-self: flex-start">
-					<object type="image/svg+xml" data="./assets/HeroiconsGlobeAltSolid.svg"></object>
-					Giza, Egypt (GMT+3)
-				</li>
-				<li>
-					<object type="image/svg+xml" data="./assets/FluentMail20Filled.svg"></object>
-					<a href="mail:legendragab@gmail.com" class="text-current">legendragab@gmail.com</a>
-				</li>
-			</ul>
 		</section>
 
 		<!-- About section -->
 		<section id="about" class="about" role="region" aria-labelledby="about-section">
 			<h2>About</h2>
 			<p>
-				Hello there, I'm Ragab, a highly motivated front-end web developer with a strong knowledge of 
-				back-end technologies and web design tools. I'm seeking a rewarding internship to further develop my skills 
-				and join a forward-thinking team where I can collaborate and learn from experienced professionals.
+				<!-- highly motivated and -->
+				<!-- and React developer -->
+				A passionate software developer with a solid foundation in web development using Reactjs and Nodejs.
+				Seeking to join a forward-thinking team where I can apply my skills and learn from experienced professionals. 
+				Committed to continuous growth for both myself and my team. 
+				<!-- aiming to develop and customize smart solutions that exceed client expectations. -->
 			</p>
 		</section>
 
+		<!-- Edu section -->
+		<section id="education" class="education" role="region" aria-labelledby="education-section">
+			<h2>Education</h2>
+			<article>
+				<header>
+					<h3>React web developer</h3>
+					<time>Apr 2024 - Oct 2024 (As expected)</time>
+				</header>
+				<div>
+					<p>- Scholarship of Digital Egypt Builders Initiative (DEBI) of the Ministry of Communications</p>
+					<p>- New Horizons Company - Cairo - Egypt</p>
+				</div>
+			</article>
+			<article>
+				<header>
+					<h3>Bachelor of commerce</h3>
+					<time>Oct 2022 - Oct 2026 (As expected)</time>
+				</header>
+				<p>- Cairo university - Egypt</p>
+			</article>
+		</section>
+
 		<!-- Exp section -->
-		<section id="experience" class="experience" role="region" aria-labelledby="experience-section">
-			<h2>Work Experience</h2>
+		<!-- <section id="experience" class="experience" role="region" aria-labelledby="experience-section">
+			<h2>Experience</h2>
 			<article role="article" aria-labelledby="front-end-web-developer-job-title">
 				<header role="heading" aria-level="3">
 					<h3 aria-label="front-end web developer" aria-current="true">
@@ -91,6 +122,40 @@
 					<time aria-label="April 2023 - June 2023">04/2023 - 06/2023</time>
 				</div>
 			</article>
+		</section> -->
+
+		<!-- Skills section -->
+		<section id="skills" class="skills" role="region" aria-labelledby="skills-section">
+			<h2>Skills</h2>
+			<ul class="capitalize">
+				<li>
+					<span class="font-semibold">Languages: </span> 
+					<span>C++, HTML, CSS/SCSS, JavaScript/JSON, SQL, Python, UML</span>
+					<!-- TypeScript -->
+					<!-- XML -->
+				</li>
+				<li>
+					<span class="font-semibold">Software concepts: </span> 
+					<span>Data structures, Algorithms, Unit testing, Database designing, OSI, OOP/OOD, SOLID principles, Problem solving, Competitive programming
+							<!-- Operating systems -->
+							<!-- Design patterns -->
+							<!-- Networking (CCNA) -->
+					</span>
+				</li>
+				<li>
+					<span class="font-semibold">Database technologies: </span> 
+					<span>SQL Server, MySQL, MongoDB (NoSQL)</span>
+				</li>
+				<li>
+					<span class="font-semibold">Web technologies: </span> 
+					<span>Nodejs, Expressjs, Nextjs API Routes, Reactjs, Nextjs, Jest, Tailwindcss, Reduxjs/RTK, JQuery</span>
+							<!-- Django & ORM & MVP  -->
+				</li>
+				<li>
+					<span class="font-semibold">Web development tools: </span> 
+					<span>Git/Github, Figma, Webpack</span>
+				</li>
+			</ul>
 		</section>
 
 		<!-- Projects section -->
@@ -99,177 +164,112 @@
 			<article>
 				<header>
 					<h3>
-						Ragab-Portfolio:
-						<date>08/2023</date>
+						<a target="_blank" href="https://ragab.vercel.app">
+							Ragab-Portfolio
+							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+						</a>
 					</h3>
 				</header>
-				<div>
-					<p>
-						That's my personal website where I showcase all of my skills and
-						my latest projects
-					</p>
-					<ul>
-						<li>
-							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss, and JSON
-						</li>
-						<li>
-							View at
-							<a target="_blank" href="https://ragab.vercel.app">https://ragab.vercel.app</a>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>My personal website, where I showcase my technical skills and my latest projects,
+					    developed using HTML5, CSS3, JS ES6, JSON, Reactjs, Nextjs, Nextjs API Routes, Tailwindcss
+					</li>
+				</ul>
 			</article>
 			<article>
 				<header>
 					<h3>
-						Ragab-CV:
-						<date>10/2023</date>
+						<a target="_blank" href="https://ragab0.github.io/Ragab-Resume">
+							Ragab-CV
+							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+						</a>
 					</h3>
 				</header>
-				<div>
-					<p>
-						That's my personal CV, which present me as a front-end web
-						developer.
-					</p>
-					<ul>
-						<li>Built with HTML5, CSS3, Tailwindcss</li>
-						<li>
-							View at
-							<a target="_blank" href="https://ragab0.github.io/Ragab-Resume">https://ragab0.github.io/Ragab-Resume</a>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>Developing an interactive CV website using web technologies such as HTML, CSS, Tailwindcss</li>
+					<li>Gained experience in UI designing, and web development, resulting in a functional and dynamical website</li>
+				</ul>
 			</article>
 			<article>
 				<header>
 					<h3>
-						tod:
-						<date>present</date>
+						<a target="_blank" href="https://todo-tasks-manager.vercel.app">
+							tod
+							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+						</a>
 					</h3>
 				</header>
-				<div>
-					<p>
-						Accessible, AI-integrated To-Do List web application designed in Figma, with offline support
-					</p>
-					<ul>
-						<li>
-							Custom-designed NLP chatbot - Tod - that understand human
-							speech (text and voice), manages tasks (CRUD, filter, and
-							sort), and answers questions (related or public)
-						</li>
-						<li>
-							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss,
-							Figma, and NLP
-						</li>
-						<li>
-							View at
-							<a target="_blank" href="https://todo-tasks-manager.vercel.app">https://todo-tasks-manager.vercel.app</a>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>Designing a user-friendly and responsive todo list web application using Redux, Reactjs, Nextjs, Tailwindcss, and Figma</li>
+					<li>Successfully built a user-friendly web application with seamless user experience, </li>
+					<li>Enhanced by the ability to create, save, retrieve and delete tasks across sessions using localStorage</li>
+				</ul>
 			</article>
 			<article>
 				<header>
 					<h3>
-						ramy-fitness:
-						<date>09/2023</date>
+						<a target="_blank" href="https://ramy-fitness.vercel.app">
+							ramy-fitness
+							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+						</a>
 					</h3>
 				</header>
-				<div>
-					<p>
-						A fitness website, Exercisedb API built in Nextjs routes and JSON,
-						seamless card functionality
-					</p>
-					<ul>
-						<li>
-							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss,
-							Figma, and JSON
-						</li>
-						<li>
-							View at
-							<a target="_blank" href="https://ramy-fitness.vercel.app">https://ramy-fitness.vercel.app</a>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>Creating a fully and comprehensive fitness website in React, Nextjs, Figma, JSON, and Tailwindcss</li>
+					<li>featuring an ExerciseDB API built with Next.js API routes</li>
+					<li>Customizable workout plans with seamless card functionality and advanced filtering 
+					</li>
+				</ul>
 			</article>
 			<article>
 				<header>
 					<h3>
-						Comphy-store:
-						<date>07/2023</date>
+						<a target="_blank" href="https://comphy-store.vercel.app">
+							Comphy-store
+							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+						</a>
 					</h3>
 				</header>
-				<div>
-					<p>
-						An E-Commerce website, API built in Node.js and Express.js
-					</p>
-					<ul>
-						<li>
-							Built with HTML5, CSS3, JavaScript, React, Nextjs, Tailwindcss,
-							Figma, Redux, and JSON
-						</li>
-						<li>
-							View at
-							<a target="_blank" href="https://comphy-store.vercel.app">https://comphy-store.vercel.app</a>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>An E-Commerce website, designed with seamless card functionality and advanced CRUD filtering,
+						developed using React, Nextjs, Tailwindcss, Figma, Redux, and JSON
+					</li>
+					<li>API built with Express.js and JSON, ensuring efficient data management and secure transactions</li>
+				</ul>
 			</article>
 		</section>
 
-		<!-- Skills section -->
-		<section id="skills" class="skills" role="region" aria-labelledby="skills-section">
-			<h2>Skills</h2>
-			<ul id="software-engineering-skiils" class="items-arrow-before grid grid-cols-2 capitalize">
-				<li>Data Structures</li>
-				<li>Algorithms</li>
-				<li>OOP</li>
-				<li>SOLID principles</li>
-				<!-- <li>Networking (Networking+)</li> -->
-				<!-- <li>Design patterns</li> -->
-				<li>Python</li>
-				<li>SQL Server (MySQL)</li>
-				<!-- <li>Problem solving</li> -->
-			</ul>
-			<ul id="technical-skiils" class="items-arrow-before grid grid-cols-2 mt-4 capitalize">
-				<li>HTML5</li>
-				<li>CSS3</li>
-				<li>JavaScript ES6+</li>
-				<li>JSON</li>
-				<li>redux</li>
-				<li>JQuery</li>
-				<li>SASS</li>
-				<li>react</li>
-				<li>nextjs</li>
-				<li>tailwindcss</li>
-				<li>jest - unit testing</li>
-				<li>git - version control</li>
-				<li>webpack - files bundling</li>
-				<li>figma - web design</li>
-			</ul>
+		<!-- Certificates section -->
+		<section id="certificates" class="certificates" role="region" aria-labelledby="certificates-section">
+			<h2>Certificates</h2>
+			<article>
+				<header>
+					<h3>
+						<a target="_blank" href="https://www.udemy.com/certificate/UC-57582c6c-6388-463a-924a-5ae757805fdf/">
+							<span class="font-bold">Mastering 4 critical SKILLS using C++17</span>
+							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
+						</a>
+					</h3>
+					<!-- <time>Feb 2024</time> -->
+				</header>
+				<ul class="disc">
+					<li>Such as programming, problem solving, project building, and desing skills</li>
+					<li>By Dr.Moustafa Saad Ibrahim - CSGitSkilledAcademy</li>
+				</ul>
+			</article>
 		</section>
 
-		<!-- Edu section -->
+		<!-- Langs section -->
 		<section id="languages" class="languages" role="region" aria-labelledby="languages-section">
 			<h2>Languages</h2>
 			<ul class="items-arrow-before capitalize">
-				<li>Arabic - native</li>
-				<li>English - conversational</li>
+				<li>
+					<span class="font-bold">Arabic</span> - native
+					</li>
+				<li>
+					<span class="font-bold">English</span> - conversational
+				</li>
 			</ul>
-		</section>
-
-		<!-- Edu section -->
-		<section id="education" class="education" role="region" aria-labelledby="education-section">
-			<h2>Education</h2>
-			<article>
-				<header>
-					<h3 class="arrow-before">Bachelor of commerce</h3>
-				</header>
-				<div>
-					<p>Cairo university - Giza - Egypt</p>
-					<time>Undergraduate, 2022 - 2026 (As expected)</time>
-				</div>
-			</article>
 		</section>
 	</main>
 </body>

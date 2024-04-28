@@ -21,29 +21,26 @@
     }
     
     body {
-        @apply bg-mainDark print:bg-white text-mainDark leading-5 text-base;
-        font-family: Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
+        @apply bg-mainDark print:bg-white text-mainDark leading-5 text-sm;
+        font-family: "Montserrat", Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
     }
 
     main {
-        @apply bg-white max-w-4xl mx-auto p-16;
-    }
-    
-    a {
-        color: blue;
+        @apply bg-white max-w-5xl mx-auto p-12;
     }
     
     h1,
     h2,
     h3,
     h4,
-    h5 {
+    h5,
+    h6 {
         text-transform: capitalize;
-        font-family: "Bree Serif",sans-serif;
+        font-weight: 600;
     }
     
     h1 {
-        @apply text-5xl leading-[.75] mb-2 uppercase;
+        @apply text-5xl leading-[.75] uppercase;
     }
     
     h2 {
@@ -56,28 +53,35 @@
     }
     
     object {
-        @apply w-5 h-5 me-1;
+        @apply w-5 h-5 me-1 inline-block;
     }
     
     time {
-        font-weight: 200;
         font-size: .9rem;
+        /* font-weight: 200; */
     }
 
     section {
-        padding-block: .75rem;
+        padding-block: 1rem;
     }
 
+    section:last-of-type {
+        padding-block-end: 0%;
+    }
     section:not(:last-of-type) {
-        border-bottom: 1px solid #eee;
-    }
-
-    section article:first-of-type h3 {
-        margin-top: -.25em;
+        border-bottom: 1px solid #ddd;
     }
 
     article:not(:last-of-type) {
-        margin-bottom: .25em;
+        margin-bottom: .5em;
+    }
+
+    article header {
+        @apply flex justify-between;
+    }
+
+    article ul {
+        @apply ms-4;
     }
 
     article li {
@@ -88,32 +92,37 @@
 
     article li::before {
         content: "-";
+        /* content: "—"; */
     }
 }
 
 
 @layer components {
+    .info .links a {
+        color: blue;
+    }
+    .education article {
+        @apply mb-3;
+    }
+    .skills li:not(:last-of-type) {
+        @apply mb-2;
+    }
     .items-start-center li {
         @apply flex items-center;
     }
+    .projects h3 {
+        @apply uppercase;
+    }
+    .projects a {
+        @apply text-inherit;
+    }
 
-    /* 
-        2197 / arrow
-        2714 Correct
-        2217 **
-        2022 (Pullit)
-        2043 (-)
-        2023 (>)
-        2765 Arrow boldest
-        2799  arrow ->
-        10195 >> wave double arrows 
-    */
     h3::before,
     .items-arrow-before li::before {
-        content: "\2217";
-        content: "\2197";
-        content: "\2714";
+        content: "\2022";
         margin-right: 5px;
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 
@@ -123,12 +132,15 @@
         display: none ;
     }
     
-    section.skills {
-        @apply pt-16;
-        page-break-before:always;
+    main, body {
+        padding: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
     }
+}
 
-    body {
-        padding-bottom: 0;
-    }
+@page {
+    background-color: blue;
+    margin: 3rem;
+    margin-bottom: 4rem;
 }
