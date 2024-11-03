@@ -1,5 +1,113 @@
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +140,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +154,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -121,8 +233,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +245,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -201,6 +319,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -224,9 +344,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -460,17 +580,15 @@ video {
 
 *::-webkit-scrollbar-thumb:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 ::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 37 50 / var(--tw-bg-opacity));
+  background-color: #aaaaaa50;
 }
 
 ::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 37 50 / var(--tw-bg-opacity));
+  background-color: #aaaaaa50;
 }
 
 body {
@@ -490,228 +608,131 @@ body {
 }
 
 body {
-  font-family: "Montserrat", Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
+  font-family: "Montserrat", Ubuntu, -apple-system, "Helvetica Neue",
+      sans-serif;
+  font-size: 13px;
 }
 
 main {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   max-width: 64rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 3rem;
+  padding: 2rem;
 }
 
 h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
   text-transform: capitalize;
   font-weight: 600;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
   line-height: .75;
 }
 
 h2 {
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
   line-height: 1.1;
+}
+
+h3 {
+  display: inline-block;
+}
+
+b {
+  font-weight: 600;
+  color: #3b535e;
+  text-transform: capitalize;
 }
 
 date {
   float: right;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
-object {
-  -webkit-margin-end: 0.25rem;
-          margin-inline-end: 0.25rem;
-  display: inline-block;
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
-time {
-  font-size: .9rem;
-  /* font-weight: 200; */
-}
-
-section {
-  padding-block: 1rem;
-}
-
-section:last-of-type {
-  -webkit-padding-after: 0%;
-          padding-block-end: 0%;
-}
-
-section:not(:last-of-type) {
-  border-bottom: 1px solid #ddd;
-}
-
-article:not(:last-of-type) {
-  margin-bottom: .5em;
-}
-
-article header {
-  display: flex;
-  justify-content: space-between;
-}
-
-article ul {
-  -webkit-margin-start: 1rem;
-          margin-inline-start: 1rem;
-}
-
-article li {
-  position: relative;
-  display: flex;
-  gap: .25em;
-}
-
-article li::before {
-  content: "-";
-  /* content: "—"; */
-}
-
-*, ::before, ::after {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-}
-
-::backdrop {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-}
-
-.info .links a {
-  color: blue;
-}
-
-.education article {
-  margin-bottom: 0.75rem;
-}
-
-.skills li:not(:last-of-type) {
-  margin-bottom: 0.5rem;
-}
-
-.items-start-center li {
-  display: flex;
+a {
+  display: inline-flex;
   align-items: center;
 }
 
-.projects h3 {
-  text-transform: uppercase;
+object {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
 }
 
-.projects a {
-  color: inherit;
+time {
+  /* font-weight: 300; */
+  text-transform: capitalize;
+  font-family: monospace;
+  opacity: 0.7;
 }
 
-h3::before,
-    .items-arrow-before li::before {
-  content: "\2022";
-  margin-right: 5px;
-  font-size: 20px;
-  font-weight: bold;
+time span {
+  letter-spacing: 1px;
+}
+
+section,
+  .profile-section {
+  padding-block: 1rem;
+}
+
+section {
+  border-top: 1px solid #ccc;
+}
+
+section:last-of-type {
+  padding-block-end: 0;
+}
+
+article:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+article h3 {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profile-section .profile-links a {
+  color: blue;
+}
+
+.profile-section .profile-links object {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.skill-category h3,
+  .skills,
+  .skills li {
+  display: inline;
+}
+
+.skills li:not(:last-child)::after {
+  content: ",";
+  margin-inline-end: 0.2rem;
+}
+
+.education-section article {
+  margin-bottom: 0.75rem;
 }
 
 .absolute {
@@ -730,24 +751,29 @@ h3::before,
   top: 0px;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
   display: flex;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .items-end {
@@ -766,8 +792,8 @@ h3::before,
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-mainDark {
@@ -784,6 +810,10 @@ h3::before,
   padding: 0px;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -798,28 +828,12 @@ h3::before,
   line-height: 1.75rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
+.font-normal {
+  font-weight: 400;
 }
 
 .capitalize {
   text-transform: capitalize;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
-.leading-\[26px\] {
-  line-height: 26px;
 }
 
 .text-current {
@@ -837,12 +851,38 @@ h3::before,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.items-start-center li {
+  display: flex;
+  align-items: center;
+}
+
+.items-with-pullits {
+  --g: 0.625rem;
+}
+
+.items-with-pullits > li {
+  position: relative;
+  width: calc(100% - var(--g));
+  transform: translateX(var(--g));
+}
+
+.items-with-pullits > li::before {
+  content: "\2022";
+  font-weight: bold;
+  height: 100%;
+  left: calc(-1 * var(--g));
+  position: absolute;
+  font-size: 1.375em;
+  line-height: 1;
+}
+
 @media print {
   section.download {
-    display: none ;
+    display: none;
   }
 
-  main, body {
+  main,
+  body {
     padding: 0 !important;
     width: 100% !important;
     margin: 0 !important;
@@ -850,9 +890,7 @@ h3::before,
 }
 
 @page {
-  background-color: blue;
-
   margin: 3rem;
 
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }

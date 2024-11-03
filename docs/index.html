@@ -1,276 +1,744 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Ragab-Resume</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
-	<main class="relative">
-		<!-- Download section -->
-		<section class="download absolute top-0 left-0 p-0 flex gap-4 w-full shadow-2xl bg-mainDark">
-			<button onclick="window.print()" class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize">
-				Print now (UpToDate version)
-			</button>
-			<a download target="_blank" href="https://raw.githubusercontent.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf"
-				class="bg-slate-600 py-4 text-slate-100 w-full text-center capitalize">
-				Download - (the real design)
-			</a>
-		</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragab-Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="relative">
+      <!-- Download section -->
+      <section
+        class="download absolute top-0 left-0 p-0 -translate-y-1/2 flex gap-2 w-full shadow-2xl text-slate-100 bg-mainDark"
+      >
+        <!-- <button
+          onclick="window.print()"
+          class="bg-slate-600 py-4 w-full text-center capitalize"
+        >
+          Print now (current version)
+        </button>
+        <button class="bg-slate-600 p-4 rounded-full">Du</button>
+        <a
+          download
+          target="_blank"
+          href="https://github.com/ragab0/Ragab-Resume/blob/main/Ragab-Resume.pdf"
+          class="bg-slate-600 py-4 w-full text-center capitalize"
+        >
+          Download (the real design)
+        </a> -->
+      </section>
 
-		<!-- First section -->
-		<section id="info" class="info" role="region" aria-labelledby="info-section">
-			<header class="mb-2">
-				<div class="flex gap-2 mb-2 items-baseline">
-					<h1>ragab eid</h1>
-					<span class="text-xl items-end">Software developer | React web developer</span>
-				</div>
-			  <div class="flex justify-between">
-					<ul class="leading-[26px] items-start-center">
-						<li style="place-self: flex-start">
-							<object type="image/svg+xml" data="./assets/HeroiconsGlobeAltSolid.svg"></object>
-							Giza - Egypt
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/MaterialSymbolsPhoneEnabled.svg"></object>
-							<a href="tel:+20 109 454 5736" class="text-current">
-								+20 109 454 5736
-								<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-							</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/FluentMail20Filled.svg"></object>
-							<a href="mail:legendragab@gmail.com" class="text-current">
-								legendragab@gmail.com
-								<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-							</a>
-						</li>
-					</ul>
-					<ul id="links" class="links items-start-center">
-						<li>
-							<object type="image/svg+xml" data="./assets/ph--code-bold.svg"></object>
-							<a target="_blank" href="https://ragab-eid.vercel.app">https://ragab-eid.vercel.app</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/MdiGithub.svg"></object>
-							<a target="_blank" href="https://github.com/ragab0">https://github.com/ragab0</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/TablerBrandLeetcode.svg"></object>
-							<a target="_blank" href="https://leetcode.com/ragab0">https://leetcode.com/ragab0</a>
-						</li>
-						<li>
-							<object type="image/svg+xml" data="./assets/MdiLinkedin.svg"></object>						
-							<a target="_blank" href="https://www.linkedin.com/in/ragab-eid">https://www.linkedin.com/in/ragab-eid</a>
-						</li>
-					</ul>
-				</div>
-			</header>
-		</section>
+      <!-- First section -->
+      <header class="profile-section" aria-labelledby="profile-section">
+        <div class="profile-header flex gap-2 mb-2 items-baseline">
+          <h1>ragab eid</h1>
+          <h2 class="text-xl items-end font-normal capitalize mb-0">
+            software developer | react web developer
+          </h2>
+        </div>
+        <div class="profile-details flex justify-between">
+          <ul class="profile-contacts items-start-center">
+            <li>
+              <object
+                aria-hidden="true"
+                type="image/svg+xml"
+                data="./assets/HeroiconsGlobeAltSolid.svg"
+              ></object>
+              Giza - Egypt
+            </li>
+            <li>
+              <object
+                aria-hidden="true"
+                type="image/svg+xml"
+                data="./assets/MaterialSymbolsPhoneEnabled.svg"
+              ></object>
+              <a href="tel:+20 109 454 5736" class="text-current">
+                +20 109 454 5736
+                <object
+                  aria-hidden="true"
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+            </li>
+            <li>
+              <object
+                aria-hidden="true"
+                type="image/svg+xml"
+                data="./assets/FluentMail20Filled.svg"
+              ></object>
+              <a href="mail:legendragab@gmail.com" class="text-current">
+                legendragab@gmail.com
+                <object
+                  aria-hidden="true"
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+            </li>
+          </ul>
+          <ul id="links" class="profile-links items-start-center">
+            <li>
+              <object
+                aria-hidden="true"
+                type="image/svg+xml"
+                data="./assets/ph--code-bold.svg"
+              ></object>
+              <a
+                target="_blank"
+                href="https://ragab-eid.vercel.app"
+                rel="noopener"
+                >https://ragab-eid.vercel.app</a
+              >
+            </li>
+            <li>
+              <object
+                aria-hidden="true"
+                type="image/svg+xml"
+                data="./assets/MdiGithub.svg"
+              ></object>
+              <a target="_blank" href="https://github.com/ragab0" rel="noopener"
+                >https://github.com/ragab0</a
+              >
+            </li>
+            <li>
+              <object
+                aria-hidden="true"
+                type="image/svg+xml"
+                data="./assets/MdiLinkedin.svg"
+              ></object>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ragab-eid"
+                rel="noopener"
+                >https://www.linkedin.com/in/ragab-eid</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
 
-		<!-- About section -->
-		<section id="about" class="about" role="region" aria-labelledby="about-section">
-			<h2>About</h2>
-			<p>
-				<!-- highly motivated and -->
-				<!-- and React developer -->
-				A passionate software developer with a solid foundation in web development using Reactjs and Nodejs.
-				Seeking to join a forward-thinking team where I can apply my skills and learn from experienced professionals. 
-				Committed to continuous growth for both myself and my team. 
-				<!-- aiming to develop and customize smart solutions that exceed client expectations. -->
-			</p>
-		</section>
+      <!-- About section -->
+      <section class="about-section" aria-labelledby="about-section">
+        <h2>About</h2>
+        <p>
+          Passionate software developer with a strong foundation in full-stack
+          web development. Proficient in front-end technologies with solid
+          back-end knowledge. Driven by a love for coding and team
+          collaboration. Eager to contribute fresh perspectives and learn from
+          experienced professionals on innovative projects.
+          <!-- Your passion for software development
+               Your full-stack capabilities, with emphasis on front-end proficiency
+               Your enthusiasm for both coding and teamwork
+               Your eagerness to contribute and learn 
+               -->
+        </p>
+      </section>
 
-		<!-- Edu section -->
-		<section id="education" class="education" role="region" aria-labelledby="education-section">
-			<h2>Education</h2>
-			<article>
-				<header>
-					<h3>React web developer</h3>
-					<time>Apr 2024 - Oct 2024 (As expected)</time>
-				</header>
-				<div>
-					<p>- Scholarship of Digital Egypt Builders Initiative (DEBI) of the Ministry of Communications</p>
-					<p>- New Horizons Company - Cairo - Egypt</p>
-				</div>
-			</article>
-			<article>
-				<header>
-					<h3>Bachelor of commerce</h3>
-					<time>Oct 2022 - Oct 2026 (As expected)</time>
-				</header>
-				<p>- Cairo university - Egypt</p>
-			</article>
-		</section>
+      <!-- Edu section -->
+      <section class="education-section" aria-labelledby="education-section">
+        <h2>Education</h2>
+        <article class="education-entry">
+          <header>
+            <p>New Horizons, Cairo</p>
+            <h3>
+              React Web Developer <time>Apr 2024 - <span>Present</span></time>
+            </h3>
+          </header>
+          <p class="details">
+            Scholarship of Digital Egypt Pioneers Initiative (DEPI) of the
+            Ministry of Communications
+          </p>
+        </article>
 
-		<!-- Exp section -->
-		<!-- <section id="experience" class="experience" role="region" aria-labelledby="experience-section">
-			<h2>Experience</h2>
-			<article role="article" aria-labelledby="front-end-web-developer-job-title">
-				<header role="heading" aria-level="3">
-					<h3 aria-label="front-end web developer" aria-current="true">
-						front-end web developer - <span class="type-of-work">Freelance</span>
-					</h3>
-				</header>
-				<div class="content" role="contentinfo">
-					<p aria-label="Kazomera">Kazomera - <span class="type-of-company">Remote</span></p>
-					<time aria-label="April 2023 - June 2023">04/2023 - 06/2023</time>
-				</div>
-			</article>
-		</section> -->
+        <article class="education-entry">
+          <header>
+            <p>Cairo University, Cairo</p>
+            <h3>Bachelor of Commerce <time>Sep 2022 - Sep 2026</time></h3>
+          </header>
+          <p class="details">
+            Undergraduate student specializing in Business Administration
+          </p>
+        </article>
+      </section>
 
-		<!-- Skills section -->
-		<section id="skills" class="skills" role="region" aria-labelledby="skills-section">
-			<h2>Skills</h2>
-			<ul class="capitalize">
-				<li>
-					<span class="font-semibold">Languages: </span> 
-					<span>C++, HTML, CSS/SCSS, JavaScript/JSON, SQL, Python, UML</span>
-					<!-- TypeScript -->
-					<!-- XML -->
-				</li>
-				<li>
-					<span class="font-semibold">Software concepts: </span> 
-					<span>Data structures, Algorithms, Unit testing, Database designing, OSI, OOP/OOD, SOLID principles, Problem solving, Competitive programming
-							<!-- Operating systems -->
-							<!-- Design patterns -->
-							<!-- Networking (CCNA) -->
-					</span>
-				</li>
-				<li>
-					<span class="font-semibold">Database technologies: </span> 
-					<span>SQL Server, MySQL, MongoDB (NoSQL)</span>
-				</li>
-				<li>
-					<span class="font-semibold">Web technologies: </span> 
-					<span>Nodejs, Expressjs, Nextjs API Routes, Reactjs, Nextjs, Jest, Tailwindcss, Reduxjs/RTK, JQuery</span>
-							<!-- Django & ORM & MVP  -->
-				</li>
-				<li>
-					<span class="font-semibold">Web development tools: </span> 
-					<span>Git/Github, Figma, Webpack</span>
-				</li>
-			</ul>
-		</section>
+      <!-- Skills section -->
+      <section class="skills-section" aria-labelledby="skills-section-heading">
+        <h2 id="skillsSectionHeading">Skills</h2>
 
-		<!-- Projects section -->
-		<section id="projects" class="projects" role="region" aria-labelledby="projects-section">
-			<h2>Projects</h2>
-			<article>
-				<header>
-					<h3>
-						<a target="_blank" href="https://ragab.vercel.app">
-							Ragab-Portfolio
-							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-						</a>
-					</h3>
-				</header>
-				<ul>
-					<li>My personal website, where I showcase my technical skills and my latest projects,
-					    developed using HTML5, CSS3, JS ES6+, JSON, Reactjs, Nextjs, Nextjs API Routes, and Tailwindcss
-					</li>
-				</ul>
-			</article>
-			<article>
-				<header>
-					<h3>
-						<a target="_blank" href="https://ragab0.github.io/Ragab-Resume">
-							Ragab-CV
-							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-						</a>
-					</h3>
-				</header>
-				<ul>
-					<li>Developing an interactive CV website using web technologies such as HTML, CSS, Tailwindcss</li>
-					<li>Gained experience in UI designing, and web development, resulting in a functional and dynamical website</li>
-				</ul>
-			</article>
-			<article>
-				<header>
-					<h3>
-						<a target="_blank" href="https://todo-tasks-manager.vercel.app">
-							tod
-							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-						</a>
-					</h3>
-				</header>
-				<ul>
-					<li>Designing a user-friendly and responsive todo list web application using Redux, Reactjs, Nextjs, Tailwindcss, and Figma</li>
-					<li>Successfully built a user-friendly web application with seamless user experience, </li>
-					<li>Enhanced by the ability to create, save, retrieve and delete tasks across sessions using localStorage</li>
-				</ul>
-			</article>
-			<article>
-				<header>
-					<h3>
-						<a target="_blank" href="https://ramy-fitness.vercel.app">
-							ramy-fitness
-							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-						</a>
-					</h3>
-				</header>
-				<ul>
-					<li>Creating a fully and comprehensive fitness website in React, Nextjs, Figma, JSON, and Tailwindcss</li>
-					<li>featuring an ExerciseDB API built with Next.js API routes</li>
-					<li>Customizable workout plans with seamless card functionality and advanced filtering 
-					</li>
-				</ul>
-			</article>
-			<article>
-				<header>
-					<h3>
-						<a target="_blank" href="https://comphy-store.vercel.app">
-							Comphy-store
-							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-						</a>
-					</h3>
-				</header>
-				<ul>
-					<li>An E-Commerce website, designed with seamless card functionality and advanced CRUD filtering,
-						developed using React, Nextjs, Tailwindcss, Figma, Redux, and JSON
-					</li>
-					<li>API built with Express.js and JSON, ensuring efficient data management and secure transactions</li>
-				</ul>
-			</article>
-		</section>
+        <!-- Programming Languages -->
+        <article class="skill-category">
+          <h3>Languages:</h3>
+          <ul class="skills">
+            <li>C++</li>
+            <!-- <li>Java</li> -->
+            <li>HTML</li>
+            <li>CSS/SCSS</li>
+            <li>JavaScript/TypeScript</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>UML</li>
+          </ul>
+        </article>
 
-		<!-- Certificates section -->
-		<section id="certificates" class="certificates" role="region" aria-labelledby="certificates-section">
-			<h2>Certificates</h2>
-			<article>
-				<header>
-					<h3>
-						<a target="_blank" href="https://www.udemy.com/certificate/UC-57582c6c-6388-463a-924a-5ae757805fdf/">
-							<span class="font-bold">Mastering 4 critical SKILLS using C++17</span>
-							<object class="w-auto h-auto" type="image/svg+xml" data="./assets/ph--link.svg"></object>
-						</a>
-					</h3>
-					<!-- <time>Feb 2024</time> -->
-				</header>
-				<ul class="disc">
-					<li>Such as programming, problem solving, project building, and desing skills</li>
-					<li>By Dr.Moustafa Saad Ibrahim - CSGitSkilledAcademy</li>
-				</ul>
-			</article>
-		</section>
+        <!-- Technical Core -->
+        <!-- Software Engineering -->
+        <article class="skill-category">
+          <h3>Software Engineering:</h3>
+          <ul class="skills">
+            <li>Data Structures and Algorithms</li>
+            <li>OOP and OOD</li>
+            <li>Design Patterns and SOLID Principles</li>
+            <li>Operating Systems</li>
+            <li>Database Design and Modeling</li>
+            <li>System Analysis and Design</li>
+            <li>Unit Testing</li>
 
-		<!-- Langs section -->
-		<section id="languages" class="languages" role="region" aria-labelledby="languages-section">
-			<h2>Languages</h2>
-			<ul class="items-arrow-before capitalize">
-				<li>
-					<span class="font-bold">Arabic</span> - native
-					</li>
-				<li>
-					<span class="font-bold">English</span> - conversational
-				</li>
-			</ul>
-		</section>
-	</main>
-</body>
+            <li>Deployment</li>
+            <li>RESTful APIs and MVC Architecture</li>
+            <li>Problem Solving and Competitive Programming</li>
+            <!-- <li>
+              Added Agile Development under Software Engineering
+            </li> -->
+          </ul>
+        </article>
+
+        <!-- Web Technologies (front & back) -->
+        <article class="skill-category">
+          <h3>Web Technologies:</h3>
+          <ul class="skills">
+            <li>Reactjs and Nextjs</li>
+            <li>Redux and RTK</li>
+            <li>TailwindCSS and Bootstrap</li>
+            <li>JSON and jQuery</li>
+
+            <li>Expressjs and Nodejs</li>
+            <li>MySQL and SQL Server</li>
+            <li>MongoDB and Mongoose (NoSQL)</li>
+            <li>Supabase and Firebase</li>
+          </ul>
+        </article>
+
+        <!-- Development Tools -->
+        <article class="skill-category">
+          <h3>Development Tools:</h3>
+          <ul class="skills">
+            <li>Swagger, Postman</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+            <li>Containerization</li>
+            <li>Figma</li>
+            <li>Webpack</li>
+            <li>Jest</li>
+          </ul>
+          <!-- gitflow - Kubernates -->
+        </article>
+      </section>
+
+      <!-- Projects section -->
+      <section class="projects-section" aria-labelledby="projects-section">
+        <h2 id="projects-heading">Projects</h2>
+        <article class="project-entry" aria-labelledby="portfolio-project">
+          <h3>
+            <a href="https://ragab.vercel.app" target="_blank" rel="noopener">
+              my Portfolio (Nextjs, JSON)
+              <object
+                data="./assets/ph--link.svg"
+                type="image/svg+xml"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              My personal website, where I showcase my technical skills and my
+              latest projects , developed using
+              <ul class="tech-stack skills inline">
+                <!-- <li>HTML5</li> -->
+                <!-- <li>CSS3</li> -->
+                <!-- <li>JavaSript ES6+</li> -->
+                <!-- <li>JSON</li> -->
+                <!-- <li>Reactjs</li> -->
+                <li>Nextjs</li>
+                <!-- <li>Tailwind CSS</li> -->
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article class="project-entry" aria-labelledby="portfolio-project">
+          <h3>
+            <a href="https://ragab.vercel.app" target="_blank" rel="noopener">
+              EDEPedia, LMS (Reactjs, RTK, Expressjs, MongoDB)
+              <object
+                data="./assets/ph--link.svg"
+                type="image/svg+xml"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              <b>Architected</b> a comprehensive eLearning Management web-based
+              System using <b>RESTful API</b> patterns and
+              <b>MVC</b>
+              architecture, built with Reactjs, Redux Toolkit, Bootstrap,
+              Express.js, MongoDB and Mongoose
+            </li>
+            <li>
+              <b>Documentated</b> the API using <b>Swagger</b> and
+              <b>Postman</b>, ensuring clear endpoint specifications
+              <!-- and testing capabilities -->
+            </li>
+            <!-- <li>
+              <b>Designed</b> system architecture and database schema through
+              detailed <b>UML diagrams</b> for efficient system modeling
+            </li> -->
+            <li>
+              <b>Designed</b> and created detailed
+              <b>UML diagrams</b>
+              for system architecture and database schema
+            </li>
+            <li>
+              <b>Built</b> three interconnected apps (Student, Mentor, Admin)
+              with
+              <ul class="skills">
+                <li><b>role-based</b> access control</li>
+                <li>shared components</li>
+                <li>centralized state management using <b>Redux Toolkit</b></li>
+                <li>
+                  <b>API integration</b> with <b>Axios</b> and
+                  <b>Redux-Thunk</b>
+                </li>
+                <li>
+                  Form validation using <b>React Hook Form</b> and <b>Joi</b>
+                </li>
+                <li>and centralized <b>error handling</b> system</li>
+              </ul>
+            </li>
+            <li>
+              <b>Implemented</b> features such as
+              <ul class="skills">
+                <li>multi-role authentication</li>
+                <li>real-time messaging and commenting via <b>Socket.io</b></li>
+                <li>YouTube playlist integration</li>
+                <li><b>Markdown</b> editor</li>
+                <li>course approval workflow</li>
+                <li>shopping cart system</li>
+                <li>reviews and ratings</li>
+                <li>progress tracking</li>
+                <li>and analytics dashboard with <b>Chart.js</b></li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>
+            <a target="_blank" href="https://todo-tasks-manager.vercel.app">
+              TOD, Smart Task Management App (Nextjs, RTK, MySQL)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              <b>Developed</b> an <b>AI-enhanced</b> Progressive Web App
+              <b>(PWA)</b> for task management using Next.js, Redux Toolkit,
+              TailwindCSS, and MySQL, featuring <b>offline support</b> and
+              <b>WCAG accessibility</b>
+              standards
+            </li>
+
+            <li>
+              <b>Integrated</b> Natural Language Processing
+              <b>(NLP)</b> capabilities enabling AI-powered task management and
+              organization using <b>NLP.js</b>
+            </li>
+
+            <li>
+              <b>Implemented</b> comprehensive <b>CRUD</b> operations with
+              powerful filtering, multi-criteria search capabilities, and
+              progress tracking functionality using <b>Redux Toolkit</b> for
+              managing state in a predictable way
+            </li>
+
+            <li>
+              <b>Created</b> responsive user-friendly
+              <b>Kanban board</b> interface with drag-and-drop capabilities
+              using <b>React DnD</b>, complemented by customizable view options
+              and user authentication system with <b>role-based</b> access
+              control and profile management using <b>React Hook Form</b> and
+              <b>Yup</b> validation
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>
+            <a target="_blank" href="https://ramy-fitness.vercel.app">
+              ramy-fitness (Nextjs, Nextjs API Routes)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              Creating a fully and comprehensive fitness website in
+              <ul class="tech-stack skills inline">
+                <li>React</li>
+                <li>Nextjs</li>
+                <li>Figma</li>
+                <li>JSON</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </li>
+            <!-- <li>featuring an ExerciseDB API built with Next.js API routes</li> -->
+            <li>featuring an ExerciseDB API built with Next.js API routes</li>
+            <li>
+              Customizable workout plans with seamless card functionality and
+              advanced filtering
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>
+            <a target="_blank" href="https://comphy-store.vercel.app">
+              Comphy-store, E-COMMERECE (Reactjs, Nextjs)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              A responsive web site developed with
+              <ul class="tech-stack skills inline">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>
+            <a target="_blank" href="https://noxe-movies-app.vercel.app/">
+              Noxe, movie app (Reactjs, Nextjs)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              A responsive web site developed with
+              <ul class="tech-stack skills inline">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>
+            <a target="_blank" href="https://ragab-gpt-3.vercel.app/">
+              GPT-3, landing page (Reactjs, Nextjs)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              A responsive web site developed with
+              <ul class="tech-stack skills inline">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>
+            <a target="_blank" href="https://ragab-hoo-bank.vercel.app/">
+              HooBank, landing page (Reactjs, Nextjs)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              A responsive web site developed with
+              <ul class="tech-stack skills inline">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3>
+            <a target="_blank" href="https://ragab0.github.io/Kasper">
+              Kasper, landing page (HTML5, CSS3)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              A responsive web site developed with
+              <ul class="tech-stack skills inline">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article class="project-entry" aria-labelledby="portfolio-project">
+          <h3>
+            <a target="_blank" href="https://ragab0.github.io/Ragab-Resume">
+              My Resume (HTML5, TailwindCSS)
+              <object
+                type="image/svg+xml"
+                data="./assets/ph--link.svg"
+              ></object>
+            </a>
+          </h3>
+          <ul class="project-details items-with-pullits">
+            <li>
+              Created an interactive CV website using web technologies such as
+              <ul class="tech-stack skills inline">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Achievements section [Problems, Open Source, Certificates] -->
+      <section
+        class="achievments-section"
+        aria-labelledby="achievments-section"
+      >
+        <h2>Achievements</h2>
+        <article>
+          <header>
+            <h3>
+              problem solving:
+              <time><span>present</span></time>
+            </h3>
+          </header>
+          <ul class="items-with-pullits">
+            <li>
+              Solving +100 DSA problems on
+              <a href="https://leetcode.com/ragab0" style="font-weight: 600"
+                >leetcode
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+              and
+              <a
+                href="https://codeforces.com/profile/ragab0"
+                style="font-weight: 600"
+                >codeforces
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <h3>
+              team leading: <time>Sep 2024 - <span>present</span></time>
+            </h3>
+          </header>
+          <ul class="items-with-pullits">
+            <li>
+              Collaboratively leading a team of
+              <b>4 members</b> and <b>managing</b> a full-stack web-based
+              system, is building using technologies like Reactjs, redux
+              toolkit, expressjs, and MongoDB.
+            </li>
+            <li>
+              My role encompassing collaboratively assigning tasks,
+              <b>planning</b>, and clearly defining and <b>supporting</b> each
+              member's responsibilities.
+            </li>
+            <li>
+              <b>Successfully</b> Created detailed class and use case
+              <b>UML diagrams</b> for both the system api and the database
+              schema
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Courses section -->
+      <section class="courses-section">
+        <h2>Courses</h2>
+        <article>
+          <header>
+            <h3>
+              <!-- https://www.udemy.com/course/dscpp-skills/a -->
+              <a target="_blank" href="#">
+                completing: Mastering critical SKILLS in Data Structures using
+                C++ (Udemy)
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+              <time>Nov 2024 - <span>present</span></time>
+            </h3>
+          </header>
+          <ul class="disc items-with-pullits">
+            <!-- <li>
+              Reactjs, TailwindCSS, RTK, Context API, routing, react-query,
+              supabase, react patterns, Nextjs, NextAuth, and deployment
+              (Netlify,Vercel)
+            </li> -->
+          </ul>
+        </article>
+        <article>
+          <header>
+            <h3>
+              <a target="_blank" href="#">
+                completing: The Complete Reactjs & Nextjs Course 2024 (Udemy)
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+              <time>Oct 2024 - <span>present</span></time>
+            </h3>
+          </header>
+          <ul class="disc items-with-pullits">
+            <li>
+              Reactjs, TailwindCSS, RTK, Context API, routing, react-query,
+              supabase, react patterns, Nextjs, NextAuth, and deployment
+              (Netlify,Vercel)
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h3>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-57582c6c-6388-463a-924a-5ae757805fdf/"
+              >
+                Completing: The Complete Nodejs Course 2024 (Udemy)
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+              <time>aug 2024 - <span>present</span></time>
+            </h3>
+          </header>
+          <ul class="disc items-with-pullits">
+            <li>
+              Nodejs, Expressjs, MongoDB, data modeling, Pugjs, RESTful APIs &
+              MVC, JWT, error handling & security, documentation (swagger,
+              postman), and deployment (Heroku, Vercel)
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h3>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-57582c6c-6388-463a-924a-5ae757805fdf/"
+              >
+                completed: The Complete JavaScript Course 2024 (Udemy)
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+              <time>may 2024 - Jun 2024</time>
+            </h3>
+          </header>
+          <ul class="disc items-with-pullits">
+            <li>
+              ES6+, AJAX calls, Promsises, event loop & asynchronous
+              programming, DOM & BOM APIs, OOP, Flowchart diagrams, debugging
+              (dev-tools), and bundling (Parceljs)
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h3>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-57582c6c-6388-463a-924a-5ae757805fdf/"
+              >
+                completed: Mastering 4 critical SKILLS using C++17 (Udemy)
+                <object
+                  type="image/svg+xml"
+                  data="./assets/ph--link.svg"
+                ></object>
+              </a>
+              <time>Jan 2024 - Feb 2024</time>
+            </h3>
+          </header>
+          <ul class="disc items-with-pullits">
+            <li>
+              Such as programming, problem solving, project building, and desing
+              skills
+            </li>
+            <li>By Dr.Moustafa Saad Ibrahim - CSGitSkilledAcademy - Udemy</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Langs section -->
+      <section class="languages-section" aria-labelledby="languages-section">
+        <h2>Languages</h2>
+        <ul class="items-with-pullits">
+          <li class="language-item">
+            <h3 class="language-name">Arabic</h3>
+            <span> - </span>
+            <span class="proficiency-level">Native</span>
+          </li>
+          <li class="language-item">
+            <h3 class="language-name">English</h3>
+            <span> - </span>
+            <span class="proficiency-level">Conversational</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

@@ -2,145 +2,171 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    * {
-        @apply transition-all;
-    }
-    
-    *::-webkit-scrollbar {
-        @apply bg-transparent w-3;
-    }
-    
-    *::-webkit-scrollbar-thumb {
-        @apply bg-slate-700 active:bg-slate-100 hover:bg-slate-500  rounded-full transition-none;
-    }
-    
-    ::selection {
-        @apply bg-mainDark;
-    }
-    
-    body {
-        @apply bg-mainDark print:bg-white text-mainDark leading-5 text-sm;
-        font-family: "Montserrat", Ubuntu, -apple-system, 'Helvetica Neue', sans-serif;
-    }
+  * {
+    @apply transition-all;
+  }
 
-    main {
-        @apply bg-white max-w-5xl mx-auto p-12;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-transform: capitalize;
-        font-weight: 600;
-    }
-    
-    h1 {
-        @apply text-5xl leading-[.75] uppercase;
-    }
-    
-    h2 {
-        @apply text-2xl leading-[1.1] mb-2;
-    }
+  *::-webkit-scrollbar {
+    @apply bg-transparent w-3;
+  }
 
-    date {
-        float: right;
-        font-size: .9em;
-    }
-    
-    object {
-        @apply w-5 h-5 me-1 inline-block;
-    }
-    
-    time {
-        font-size: .9rem;
-        /* font-weight: 200; */
-    }
+  *::-webkit-scrollbar-thumb {
+    @apply bg-slate-700 active:bg-slate-400 hover:bg-slate-500  rounded-full transition-none;
+  }
 
-    section {
-        padding-block: 1rem;
-    }
+  ::selection {
+    background-color: #aaaaaa50;
+  }
 
-    section:last-of-type {
-        padding-block-end: 0%;
-    }
-    section:not(:last-of-type) {
-        border-bottom: 1px solid #ddd;
-    }
+  body {
+    @apply bg-mainDark print:bg-white text-mainDark leading-5 text-sm;
+    font-family: "Montserrat", Ubuntu, -apple-system, "Helvetica Neue",
+      sans-serif;
+    font-size: 13px;
+  }
 
-    article:not(:last-of-type) {
-        margin-bottom: .5em;
-    }
+  main {
+    @apply bg-white max-w-5xl mx-auto p-8 my-12;
+  }
 
-    article header {
-        @apply flex justify-between;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: capitalize;
+    font-weight: 600;
+  }
 
-    article ul {
-        @apply ms-4;
-    }
+  h1 {
+    @apply text-4xl leading-[.75] uppercase;
+  }
 
-    article li {
-        position: relative;
-        display: flex;
-        gap: .25em;
-    }
+  h2 {
+    @apply text-lg leading-[1.1] uppercase mb-2;
+  }
 
-    article li::before {
-        content: "-";
-        /* content: "—"; */
-    }
+  h3 {
+    display: inline-block;
+  }
+
+  b {
+    font-weight: 600;
+    color: #3b535e;
+    text-transform: capitalize;
+  }
+
+  date {
+    float: right;
+    font-size: 0.9em;
+  }
+
+  a {
+    @apply inline-flex items-center;
+  }
+
+  object {
+    @apply w-4 h-4 mx-1 inline-block;
+  }
+
+  time {
+    /* font-weight: 300; */
+    text-transform: capitalize;
+    font-family: monospace;
+    opacity: 0.7;
+  }
+
+  time span {
+    letter-spacing: 1px;
+  }
+
+  section,
+  .profile-section {
+    padding-block: 1rem;
+  }
+
+  section {
+    border-top: 1px solid #ccc;
+  }
+
+  section:last-of-type {
+    padding-block-end: 0;
+  }
+
+  article:not(:last-of-type) {
+    margin-bottom: 0.5em;
+  }
+
+  article h3 {
+    @apply inline-flex w-full justify-between;
+  }
 }
-
 
 @layer components {
-    .info .links a {
-        color: blue;
-    }
-    .education article {
-        @apply mb-3;
-    }
-    .skills li:not(:last-of-type) {
-        @apply mb-2;
-    }
-    .items-start-center li {
-        @apply flex items-center;
-    }
-    .projects h3 {
-        @apply uppercase;
-    }
-    .projects a {
-        @apply text-inherit;
-    }
+  .profile-section .profile-links a {
+    color: blue;
+  }
 
-    h3::before,
-    .items-arrow-before li::before {
-        content: "\2022";
-        margin-right: 5px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+  .profile-section .profile-links object {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .skill-category h3,
+  .skills,
+  .skills li {
+    display: inline;
+  }
+  .skills li:not(:last-child)::after {
+    content: ",";
+    margin-inline-end: 0.2rem;
+  }
+
+  .education-section article {
+    @apply mb-3;
+  }
 }
 
+@layer utilities {
+  .items-start-center li {
+    @apply flex items-center;
+  }
+
+  .items-with-pullits {
+    --g: 0.625rem;
+  }
+  .items-with-pullits > li {
+    position: relative;
+    width: calc(100% - var(--g));
+    transform: translateX(var(--g));
+  }
+  .items-with-pullits > li::before {
+    content: "\2022";
+    font-weight: bold;
+    height: 100%;
+    left: calc(-1 * var(--g));
+    position: absolute;
+    font-size: 1.375em;
+    line-height: 1;
+  }
+}
 
 @media print {
-    section.download {
-        display: none ;
-    }
-    
-    main, body {
-        padding: 0 !important;
-        width: 100% !important;
-        margin: 0 !important;
-    }
+  section.download {
+    display: none;
+  }
+
+  main,
+  body {
+    padding: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
 }
 
 @page {
-    background-color: blue;
-    margin: 3rem;
-    margin-bottom: 4rem;
+  margin: 3rem;
+  margin-bottom: 5rem;
 }

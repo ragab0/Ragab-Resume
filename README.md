@@ -1,17 +1,22 @@
 # Ragab-Resume
 
-My personal CV, an interactive, modern, functional website that present me at the field of web development.
-
+My personal CV, an interactive, modern, functional website that presents me in the field of web development.
 
 ## Built with:
 
 - HTML5
 - CSS3
 - Tailwindcss
-- Using the nodejs environment
+- Node.js environment
 
-## view at: 
+## view at:
+
 Ragab Eid Resume website at https://ragab0.github.io/Ragab-Resume/
 
+## Search Online:
+
+You can also search for "Ragab Eid" on Google to find my portfolio or "Ragab Eid Resume" to view my resume.
+
 ## More:
-To see my personal website (Ragab Eid Portfolio) https://ragab-eid.vercel.app
+
+You can search for "Ragab Eid" on Google to find my portfolio or "Ragab Eid Resume" to view my resume.

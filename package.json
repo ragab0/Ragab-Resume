@@ -1,19 +1,14 @@
 {
   "name": "cv",
-  "version": "5.0.2",
-  "description": "Ragab persoanl CV which introduce him in the field of front-end web development",
+  "version": "7.0.1",
+  "description": "Ragab's persoanl CV which introduce him in the field of web development",
   "main": "/docs/index.html",
   "scripts": {
     "twd": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch"
   },
   "author": "ragab0",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.13"
+  }
 }
-
-
-
-
-
-
-
-
