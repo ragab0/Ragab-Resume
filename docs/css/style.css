@@ -735,6 +735,10 @@ article h3 {
   margin-bottom: 0.75rem;
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
